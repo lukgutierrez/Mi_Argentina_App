@@ -9,29 +9,29 @@ class HomePage extends StatelessWidget {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.cabin_sharp,
-              color: Colors.black,
-            ),
+            icon: SizedBox(
+                width: 20,
+                height: 20,
+                child: Image(image: AssetImage("assets/hause.png"))),
             label: "INICIO",
           ),
           BottomNavigationBarItem(
-              icon: Icon(
-                Icons.abc,
-                color: Colors.black,
-              ),
+              icon: SizedBox(
+                  width: 40,
+                  height: 40,
+                  child: Image(image: AssetImage("assets/novedades.png"))),
               label: "NOVEDADES"),
           BottomNavigationBarItem(
-              icon: Icon(
-                Icons.abc,
-                color: Colors.black,
-              ),
+              icon: SizedBox(
+                  width: 40,
+                  height: 40,
+                  child: Image(image: AssetImage("assets/telefonos.png"))),
               label: "TELEFONOS"),
           BottomNavigationBarItem(
-              icon: Icon(
-                Icons.abc,
-                color: Colors.black,
-              ),
+              icon: SizedBox(
+                  width: 40,
+                  height: 40,
+                  child: Image(image: AssetImage("assets/tina.png"))),
               label: "TINA"),
         ],
       ),
