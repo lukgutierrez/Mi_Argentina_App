@@ -7,14 +7,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: true,
+        showUnselectedLabels: true,
+        unselectedItemColor: Colors.black54,
+        unselectedFontSize: 12,
         items: [
           BottomNavigationBarItem(
-            icon: SizedBox(
-                width: 20,
-                height: 20,
-                child: Image(image: AssetImage("assets/hause.png"))),
-            label: "INICIO",
-          ),
+              icon: ImageIcon(AssetImage("assets/hause.png")), label: "INICIO"),
           BottomNavigationBarItem(
               icon: SizedBox(
                   width: 40,
