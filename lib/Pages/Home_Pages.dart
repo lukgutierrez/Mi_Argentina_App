@@ -6,34 +6,38 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        showSelectedLabels: true,
-        showUnselectedLabels: true,
-        unselectedItemColor: Colors.black54,
-        unselectedFontSize: 12,
-        items: [
-          BottomNavigationBarItem(
-              icon: ImageIcon(AssetImage("assets/hause.png")), label: "INICIO"),
-          BottomNavigationBarItem(
-              icon: SizedBox(
-                  width: 40,
-                  height: 40,
-                  child: Image(image: AssetImage("assets/novedades.png"))),
-              label: "NOVEDADES"),
-          BottomNavigationBarItem(
-              icon: SizedBox(
-                  width: 40,
-                  height: 40,
-                  child: Image(image: AssetImage("assets/telefonos.png"))),
-              label: "TELEFONOS"),
-          BottomNavigationBarItem(
-              icon: SizedBox(
-                  width: 40,
-                  height: 40,
-                  child: Image(image: AssetImage("assets/tina.png"))),
-              label: "TINA"),
-        ],
-      ),
+      // bottomNavigationBar: BottomNavigationBar(
+      //   showUnselectedLabels: true,
+      //   unselectedItemColor: Colors.black54,
+      //   unselectedFontSize: 13,
+      //   fixedColor: Color(0xFFF2CAEE8),
+      //   items: [
+      //     BottomNavigationBarItem(
+      //         icon: ImageIcon(
+      //           AssetImage("assets/hause.png"),
+      //           color: Color(0xFFF2CAEE8),
+      //         ),
+      //         label: "INICIO"),
+      //     BottomNavigationBarItem(
+      //         icon: SizedBox(
+      //             width: 40,
+      //             height: 40,
+      //             child: Image(image: AssetImage("assets/novedades.png"))),
+      //         label: "NOVEDADES"),
+      //     BottomNavigationBarItem(
+      //         icon: SizedBox(
+      //             width: 40,
+      //             height: 40,
+      //             child: Image(image: AssetImage("assets/telefonos.png"))),
+      //         label: "TELEFONOS"),
+      //     BottomNavigationBarItem(
+      //         icon: SizedBox(
+      //             width: 40,
+      //             height: 40,
+      //             child: Image(image: AssetImage("assets/tina.png"))),
+      //         label: "TINA"),
+      //   ],
+      // ),
       drawer: Drawer(),
       appBar: AppBar(
         elevation: 0,
@@ -47,6 +51,9 @@ class HomePage extends StatelessWidget {
                 child: Image(image: AssetImage("assets/logomiarg.png"))),
           ],
         ),
+      ),
+      body: Container(
+        child: Image(image: AssetImage("assets/fondo.jpg")),
       ),
     );
   }
