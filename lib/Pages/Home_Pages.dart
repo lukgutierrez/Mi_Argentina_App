@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mi_argentina_licenses/Pages/Documents.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -122,7 +123,14 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Container(
-        child: Image(image: AssetImage("assets/fondo.jpg")),
+        child: GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Documents()),
+              );
+            },
+            child: Image(image: AssetImage("assets/fondo.jpg"))),
       ),
     );
   }
