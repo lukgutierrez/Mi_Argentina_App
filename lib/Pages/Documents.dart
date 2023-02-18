@@ -13,24 +13,40 @@ class Documents extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Card(
-            child: Image(image: AssetImage("assets/image2.jpg")),
-          ),
-          Card(
-            child: Image(image: AssetImage("assets/image3.jpg")),
-          ),
-          Card(
-            child: Image(image: AssetImage("assets/image4.jpg")),
-          ),
           ExpansionPanelList(
             children: [
               ExpansionPanel(
                   headerBuilder: (context, isExpanded) {
-                    return Text("heloo");
+                    return Image(image: AssetImage("assets/image7.jpg"));
                   },
-                  body: Text("pioo")),
+                  body: Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.amber,
+                  ),
+                  isExpanded: false),
+              ExpansionPanel(
+                  headerBuilder: (context, isExpanded) {
+                    return Image(image: AssetImage("assets/image2.jpg"));
+                  },
+                  body: Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.amber,
+                  ),
+                  isExpanded: false),
+              ExpansionPanel(
+                  headerBuilder: (context, isExpanded) {
+                    return Image(image: AssetImage("assets/image3.jpg"));
+                  },
+                  body: Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.amber,
+                  ),
+                  isExpanded: false),
             ],
-          )
+          ),
         ],
       ),
     );
