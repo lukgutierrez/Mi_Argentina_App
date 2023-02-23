@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mi_argentina_licenses/Pages/DNI_Digital.dart';
 
 class Documents extends StatefulWidget {
   const Documents({Key? key}) : super(key: key);
@@ -52,7 +53,12 @@ class _DocumentsState extends State<Documents> {
                   body: Padding(
                     padding: const EdgeInsets.all(10.0),
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => DNIDigital()),
+                        );
+                      },
                       child: Container(
                           height: 50,
                           width: 300,
