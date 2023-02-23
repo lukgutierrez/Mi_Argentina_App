@@ -22,14 +22,22 @@ class _DNIDigitalState extends State<DNIDigital> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        actions: [Icon(Icons.refresh)],
         backgroundColor: Color(0xFFF2CAEE8),
         title: Text("Dni Digital"),
       ),
       body: Column(
         children: [
+          Divider(
+            height: 20,
+            color: Colors.transparent,
+          ),
           Text(
             "Última actualización:" + _FechaActual,
-            style: TextStyle(fontSize: 15, fontWeight: FontWeight.w200),
+            style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.w400,
+                color: Colors.black54),
           ),
           Container(
             height: 300,
@@ -40,7 +48,7 @@ class _DNIDigitalState extends State<DNIDigital> {
                       alignment: Alignment.center,
                       child: Image(image: AssetImage(imagedni[index])));
                 },
-                slideTransform: CubeTransform(),
+                slideTransform: FlipHorizontalTransform(),
                 slideIndicator: CircularSlideIndicator(
                   padding: EdgeInsets.only(bottom: 32),
                 ),
