@@ -12,8 +12,9 @@ class DNIDigital extends StatefulWidget {
 
 class _DNIDigitalState extends State<DNIDigital> {
   final List<String> imagedni = [
-    'assets/1.png',
-    'assets/2.png',
+    ///PROBLEMT////////
+    'assets/.jpg',
+    'assets/.jpg',
   ];
 
   @override
